@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+body{
+    background-image: url("../assets/img/ss_3e69862cbd117e83da91129ec8ecbc244d7c1f43.1920x1080.jpg");
+    background-attachment: fixed;
+    background-size: 100%;
+  
+}
+
+
+nav{
+    background-color: rgba(0, 0, 0, 0.76);
+    height: 10%;
+    width : 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    transition: top 1s;
+    z-index: 5;
+    justify-content: center;
+}
+
+#logo_BM img{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  margin-left: 30px;
+}
+#logo_HLL img{
+ width: 100%;
+ height: 80%;
+ margin-top: 7px; 
+}
+#logo_HLL img:hover, #logo_BM img:hover{
+  transform: scale(1.2);
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.nav_a a{
+    color: white;
+    text-decoration: none;
+    padding: 25px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+nav li:hover{
+  transform: scale(1.2);
+  text-decoration: underline;
+}
+.nav_a a:hover{
+  padding-bottom: 5px;
+}
+
+/* Content*/
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    background-color: rgba(0, 0, 0, 0.605);
+}
+.container h1{
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card{
+    margin: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.card h3{
+    margin-top: 10px;
+    text-decoration: underline;
+    font-size: 20px;
+}
+.card img{
+    width: 350px;
+    height : 250px;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+/*footer*/
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.605);
+}
+.reseaux {
+  text-align: center;
+}
+

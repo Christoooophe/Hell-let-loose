@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hell let loose</title>
+    <link rel="icon" href="./assets/img/communityIcon_v70ldv71jym41.png">
+    <link rel="stylesheet" href="./css/form-style.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="index.html"id="logo_HLL"><img src="./assets/img/d4a4debacb0faa71cf19519e0b534cc5.png"></a>
+            <ul class="nav_a">
+                <!--<li><a href="">Accueil</a></li>-->
+                <li><a href="">Equipements</a></li>
+                <li><a href="maps.html">Cartes</a></li>
+                <li><a href="">Véhicules</a></li>
+                <li><a href="">connectez-vous</a></li>
+            </ul>
+            <a href="https://www.blackmatterstudio.com/" id="logo_BM"><img src="./assets/img/1519907000012-removebg-preview.png" ></a>
+        </nav>
+    </header>
+    <div class="form">
+        <form id="form1">
+            <div class="container">
+                <div class="elements">
+                    <label>Login</label>
+                    <input type="text" class="text" id="username" name="text1" placeholder="E-mail" maxlength="60">
+                </div>
+                <div class="elements">
+                    <label>Password</label>
+                    <input type="password" class="text" id="password" placeholder="**********" maxlength="25"> 
+                </div>
+                <div class="case">
+                    <input type="checkbox" onclick="myFunction()">Show password
+                </div>
+                <span id="span"></span>
+                </div> 
+            <div class="button">
+                <button type="button"class="button" id="submit" onclick="verifCompte(); ValidateEmail() ">Submit &#10095;</button>
+                <button type="reset" class="button" id="reset" onclick="macouille()">Reset &#10095;</button>
+            </div>
+        </form>
+    </div>
+    <script src="/javascript/form-script.js"></script>
+</body>
+</html>

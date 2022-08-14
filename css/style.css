@@ -1,0 +1,284 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+body{
+  background-color: black;
+
+}
+#myVideo {
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.76);
+    height: 10%;
+    width : 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    transition: top 1s;
+    z-index: 5;
+    justify-content: center;
+}
+.videoTop{
+  z-index: 1;
+}
+
+.imgTop{
+  z-index: 2;
+}
+
+#logo_BM img{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  margin-left: 30px;
+}
+#logo_HLL img{
+ width: 100%;
+ height: 80%;
+ margin-top: 7px; 
+}
+#logo_HLL img:hover, #logo_BM img:hover{
+  transform: scale(1.2);
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.nav_a a{
+    color: white;
+    text-decoration: none;
+    padding: 25px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+nav li:hover{
+  transform: scale(1.2);
+  text-decoration: underline;
+}
+.nav_a a:hover{
+  padding-bottom: 5px;
+}
+.section_button_container{
+    background: url('../assets/img/La-mise-a-jour-Hell-Let-Loose-apporte-des-tonnes.jpg');
+    background-size: 100%;
+    height: 750px;
+    margin: 0;
+}
+.top_button_and_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 35%;
+    padding-top: 15%;
+}
+.top_button_and_text button{
+    height: 100px;
+    width: 400px;
+    margin-top: 5%;
+    background-color: transparent;
+    border-color: white;
+    font-size: 10;
+    cursor: pointer;
+}
+.top_button_and_text h1{
+    line-height: 70px;
+}
+.top_button_and_text h1,.top_button_and_text button{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+.top_button_and_text button,.top_button_and_text button::after {
+    background: linear-gradient(45deg, transparent 5%, rgba(0, 0, 0, 0.395) 5%);
+    border: 0;
+    color: #fff;
+    letter-spacing: 3px;
+    box-shadow: 6px 0px 0px white;
+    outline: transparent;
+    position: relative;
+  }
+  
+.top_button_and_text button::after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  
+  content: 'AVAILABLE NOW';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, white 3%, white 5%, black 5%);
+  text-shadow: -3px -3px 0px black, 3px 3px 0px white;
+  clip-path: var(--slice-0);
+  }
+  
+  .top_button_and_text button:hover::after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+  }
+  
+  @keyframes glitch {
+    0% {
+      clip-path: var(--slice-1);
+      transform: translate(-20px, -10px);
+    }
+    10% {
+      clip-path: var(--slice-3);
+      transform: translate(10px, 10px);
+    }
+    20% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 10px);
+    }
+    30% {
+      clip-path: var(--slice-3);
+      transform: translate(0px, 5px);
+    }
+    40% {
+      clip-path: var(--slice-2);
+      transform: translate(-5px, 0px);
+    }
+    50% {
+      clip-path: var(--slice-3);
+      transform: translate(5px, 0px);
+    }
+    60% {
+      clip-path: var(--slice-4);
+      transform: translate(5px, 10px);
+    }
+    70% {
+      clip-path: var(--slice-2);
+      transform: translate(-10px, 10px);
+    }
+    80% {
+      clip-path: var(--slice-5);
+      transform: translate(20px, -10px);
+    }
+    90% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 0px);
+    }
+    100% {
+      clip-path: var(--slice-1);
+      transform: translate(0);
+    }
+  }
+
+.block_with_title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.block_with_title_top {
+  text-transform: uppercase;
+  font-size: x-large;
+  transform: scale(1, 2);
+}
+.block_with_title_top span{
+  color : rgb(249, 47, 249)
+}
+.block_with_title_top_bottom {
+  font-size: x-large;
+  width : 70%;
+  margin-top: 100px;
+  word-spacing: 5px;
+  line-height: 30px;
+  text-align: center;
+}
+
+  /*carousel*/
+.center {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.wrapper {
+  display: flex;
+  grid-gap: 1em;
+  overflow: hidden;
+  width: 78em;
+}
+.inner {
+  display: flex;
+  grid-gap: 1em;
+  transition: all 1s ease-in-out;
+}
+.card {
+  border-radius: 0.5em;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+.card img {
+  border-top-right-radius: inherit;
+  border-top-left-radius: inherit;
+  display: block;
+  width: 25em;
+  height: 20em;
+}
+.content {
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  padding: 1em;
+  text-align: center;
+ }
+.content h1,h3 {
+  margin: 0.35em 0;
+  }
+.map button {
+  cursor: pointer;
+  margin: 0 10px;
+  position: relative;
+  user-select: none;
+  border-color: #fff;
+  background-color: black;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  
+}
+.map button:active{
+  background-color:white;
+}
+.map button:after{
+  background-color:white;
+}
+
+  /*footer*/
+
+footer{
+  display: flex;
+  margin-top: 10%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.reseaux {
+  text-align: center;
+}
+
