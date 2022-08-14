@@ -1,30 +1,33 @@
 *{
-    box-sizing: border-box;
-    margin: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+    
+    
 }
 body{
   background-color: black;
 
 }
 #myVideo {
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
+  bottom: 0;
+  height: 100%;
+  right: 0;
+  width: 100%;
 }
 
 nav{
-    background-color: rgba(0, 0, 0, 0.76);
-    height: 10%;
-    width : 100%;
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    transition: top 1s;
-    z-index: 5;
-    justify-content: center;
+  background-color: rgba(0, 0, 0, 0.76);
+  display: flex;
+  flex-direction: row;
+  height: 10%;
+  justify-content: center;
+  position: fixed;
+  width : 100%;
+  transition: top 1s;
+  z-index: 5;
+   
 }
 .videoTop{
   z-index: 1;
@@ -35,32 +38,32 @@ nav{
 }
 
 #logo_BM img{
-  width: 100%;
   height: 100%;
   margin: auto;
   margin-left: 30px;
+  width: 100%;
 }
 #logo_HLL img{
- width: 100%;
- height: 80%;
- margin-top: 7px; 
+  height: 80%;
+  margin-top: 7px;
+  width: 100%; 
 }
 #logo_HLL img:hover, #logo_BM img:hover{
   transform: scale(1.2);
 }
 ul{
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
 }
 .nav_a a{
-    color: white;
-    text-decoration: none;
-    padding: 25px;
-    font-size: 30px;
-    text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  padding: 25px;
+  font-size: 30px;
+  text-transform: uppercase;
 }
 nav li:hover{
   transform: scale(1.2);
@@ -69,46 +72,58 @@ nav li:hover{
 .nav_a a:hover{
   padding-bottom: 5px;
 }
+
+/*block bouton*/
+.top_button_and_text{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+.top_button_and_text.active{
+  transform: translateY(0);
+  opacity: 1;
+}
 .section_button_container{
-    background: url('../assets/img/La-mise-a-jour-Hell-Let-Loose-apporte-des-tonnes.jpg');
-    background-size: 100%;
-    height: 750px;
-    margin: 0;
+  background: url('../assets/img/La-mise-a-jour-Hell-Let-Loose-apporte-des-tonnes.jpg');
+  background-size: 100%;
+  height: 750px;
+  margin: 0;
 }
 .top_button_and_text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 35%;
-    padding-top: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 35%;
+  padding-top: 15%;
 }
 .top_button_and_text button{
-    height: 100px;
-    width: 400px;
-    margin-top: 5%;
-    background-color: transparent;
-    border-color: white;
-    font-size: 10;
-    cursor: pointer;
+  height: 100px;
+  width: 400px;
+  margin-top: 5%;
+  background-color: transparent;
+  border-color: white;
+  font-size: 10;
+  cursor: pointer;
 }
 .top_button_and_text h1{
-    line-height: 70px;
+  line-height: 70px;
 }
 .top_button_and_text h1,.top_button_and_text button{
-    color: white;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 30px;
-    text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
 }
 .top_button_and_text button,.top_button_and_text button::after {
-    background: linear-gradient(45deg, transparent 5%, rgba(0, 0, 0, 0.395) 5%);
-    border: 0;
-    color: #fff;
-    letter-spacing: 3px;
-    box-shadow: 6px 0px 0px white;
-    outline: transparent;
-    position: relative;
+  background: linear-gradient(45deg, transparent 5%, rgba(0, 0, 0, 0.395) 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  box-shadow: 6px 0px 0px white;
+  outline: transparent;
+  position: relative;
   }
   
 .top_button_and_text button::after {
@@ -197,7 +212,7 @@ nav li:hover{
   transform: scale(1, 2);
 }
 .block_with_title_top span{
-  color : rgb(249, 47, 249)
+  color : rgb(252, 65, 65)
 }
 .block_with_title_top_bottom {
   font-size: x-large;
@@ -269,7 +284,104 @@ nav li:hover{
   background-color:white;
 }
 
-  /*footer*/
+/*Formulaire*/
+
+form{
+  display: flex;
+  width: 70%;
+  margin: auto;
+  justify-content: space-around;
+}
+.form-container-right{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  align-items: center;
+}
+.form-container-right label{
+  font-size: xx-large;
+  text-transform: uppercase;
+}
+.form-container-right input{
+  height: 30px;
+  text-align: center;
+}
+.form-container-right textarea{
+  height: 200px;
+  resize: none;
+}
+.form-container-right select{
+  height: 30px;
+  text-align: center;
+}
+.form-container-right input, textarea, select{
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: large;
+}
+.form-container-right option, input, textarea, select{
+  color: black;
+}
+.form-container-left {
+  text-align: right;
+  width: 40%;
+}
+.form-container-left h1, .form-container-left span{
+  font-size: 120px;
+}
+.form-container-left h3{
+  font-size: 40px;
+}
+.form-container-left p{
+  font-size: 20px;
+}
+.form-container-left span{
+  color: rgb(252, 65, 65);
+}
+.button-28 {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 70%;
+  will-change: transform;
+}
+
+.button-28:disabled {
+  pointer-events: none;
+}
+
+.button-28:hover {
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+/*footer*/
 
 footer{
   display: flex;
