@@ -1,0 +1,19 @@
+.flag-container{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+.flag img{
+   cursor: pointer; 
+   height: 250px;
+   width : 400px;
+}
+.Flag img{
+    cursor: pointer;
+    height: 300px;
+    width: 300px;
+}
+h1{
+    padding-top: 100px;
+    text-align: center;
+}

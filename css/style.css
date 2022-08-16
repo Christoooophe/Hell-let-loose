@@ -85,9 +85,10 @@ nav li:hover{
   opacity: 1;
 }
 .section_button_container{
-  background: url('../assets/img/La-mise-a-jour-Hell-Let-Loose-apporte-des-tonnes.jpg');
+  background: url('../assets/img/bgbutton/Captureorange.PNG');
   background-size: 100%;
-  height: 750px;
+  background-repeat: no-repeat;
+  height: 850px;
   margin: 0;
 }
 .top_button_and_text {
@@ -216,7 +217,8 @@ nav li:hover{
   transform: scale(1, 2);
 }
 .block_with_title_top span{
-  color : rgb(252, 65, 65)
+  color : rgb(252, 65, 65);
+  margin: 0 30px;
 }
 .block_with_title_top_bottom {
   font-size: x-large;

@@ -91,10 +91,12 @@ nav li:hover{
     font-size: 20px;
 }
 .card img{
-    width: 350px;
-    height : 250px;
+  border: solid 1px rgb(75, 75, 75);
     border-radius: 5%;
     cursor: pointer;
+    filter: drop-shadow(0 0 0.75rem rgb(74, 74, 74));
+    height : 250px;
+    width: 400px;
 }
 
 /*footer*/
