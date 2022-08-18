@@ -17,61 +17,6 @@ body{
   width: 100%;
 }
 
-nav{
-  background-color: rgba(0, 0, 0, 0.76);
-  display: flex;
-  flex-direction: row;
-  height: 10%;
-  justify-content: center;
-  position: fixed;
-  width : 100%;
-  transition: top 1s;
-  z-index: 5;
-   
-}
-.videoTop{
-  z-index: 1;
-}
-
-.imgTop{
-  z-index: 2;
-}
-
-#logo_BM img{
-  height: 100%;
-  margin: auto;
-  margin-left: 30px;
-  width: 100%;
-}
-#logo_HLL img{
-  height: 80%;
-  margin-top: 7px;
-  width: 100%; 
-}
-#logo_HLL img:hover, #logo_BM img:hover{
-  transform: scale(1.2);
-}
-ul{
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  list-style-type: none;
-}
-.nav_a a{
-  color: white;
-  text-decoration: none;
-  padding: 25px;
-  font-size: 30px;
-  text-transform: uppercase;
-}
-nav li:hover{
-  transform: scale(1.2);
-  text-decoration: underline;
-}
-.nav_a a:hover{
-  padding-bottom: 5px;
-}
 
 /*block bouton*/
 .top_button_and_text{
@@ -204,21 +149,27 @@ nav li:hover{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: auto;
   margin-top: 100px;
   margin-bottom: 100px;
+  width: 80%
 }
 .block_with_title img{
   margin-bottom: 100px;
-  width: 80%;
+  width: 100%;
 }
 .block_with_title_top {
-  text-transform: uppercase;
-  font-size: x-large;
+  font-size: xx-large;
   transform: scale(1, 2);
+  text-transform: uppercase;
 }
 .block_with_title_top span{
   color : rgb(252, 65, 65);
   margin: 0 30px;
+  font-family: 'Rubik Dirt', cursive;
+}
+.block_with_title span, .block_with_title h1{
+  font-family: 'Allerta Stencil', sans-serif;
 }
 .block_with_title_top_bottom {
   font-size: x-large;
@@ -253,14 +204,15 @@ nav li:hover{
 }
 .card {
   border-radius: 0.5em;
-  
+  width: 25em;
 }
 .card img {
   border-top-right-radius: inherit;
   border-top-left-radius: inherit;
   display: block;
-  width: 25em;
-  height: 20em;
+  width: 20em;
+  height: 15em;
+  margin: auto;
 }
 .content {
   border-bottom-left-radius: inherit;
@@ -276,7 +228,7 @@ nav li:hover{
   margin: 0 10px;
   position: relative;
   user-select: none;
-  border-color: black;
+  border-color: rgba(0, 0, 0, 0.329);
   background-color: white;
   height: 20px;
   width: 20px;
@@ -309,6 +261,7 @@ nav li:hover{
   height: 200px;
   margin-bottom: 3px;
   width: 300px;
+  filter: brightness(1.25);
 }
 
 /*Formulaire*/
@@ -418,14 +371,4 @@ form{
 }
 /*footer*/
 
-footer{
-  display: flex;
-  margin-top: 10%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.reseaux {
-  text-align: center;
-}
 
