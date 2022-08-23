@@ -34,7 +34,6 @@ body{
   background-size: 100%;
   background-repeat: no-repeat;
   height: 850px;
-  margin: 0;
 }
 .top_button_and_text {
   display: flex;
@@ -54,6 +53,7 @@ body{
 }
 .top_button_and_text h1{
   line-height: 70px;
+  width: 80%;
 }
 .top_button_and_text h1,.top_button_and_text button{
   color: white;
@@ -155,6 +155,7 @@ body{
   width: 80%
 }
 .block_with_title img{
+  height: 250px;
   margin-bottom: 100px;
   width: 100%;
 }
@@ -169,6 +170,7 @@ body{
   font-family: 'Rubik Dirt', cursive;
 }
 .block_with_title span, .block_with_title h1{
+  text-align: center;
   font-family: 'Allerta Stencil', sans-serif;
 }
 .block_with_title_top_bottom {
@@ -187,15 +189,15 @@ body{
   flex-direction: column;
   height: 100%;
   justify-content: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 10%;
+  margin-bottom: 30px;
 }
 
 .wrapper {
   display: flex;
   grid-gap: 1em;
   overflow: hidden;
-  width: 78em;
+  width: 70%;
 }
 .inner {
   display: flex;
@@ -210,7 +212,7 @@ body{
   border-top-right-radius: inherit;
   border-top-left-radius: inherit;
   display: block;
-  width: 20em;
+  width: 90%;
   height: 15em;
   margin: auto;
 }
@@ -238,7 +240,7 @@ body{
 .map button:active{
   background-color:black;
 }
-.map button:after{
+.map button::after{
   background-color:black;
 }
 
@@ -372,3 +374,118 @@ form{
 /*footer*/
 
 
+@media screen and (max-width: 1300px){
+  .block_with_title_top {
+    font-size: x-large;
+  }
+  .section_button_container{
+    height: 700px;
+  }
+}
+@media screen and (max-width: 1100px){
+  .section_button_container{
+    height: 700px;
+    margin: 0;
+  }
+  .section_button_container{
+    height: 600px;
+  }
+  .block_with_title{
+    margin-top: 80px;
+  }
+  .block_with_title_top {
+    font-size: large;
+  }
+  .block_with_title img{
+    margin-bottom: 80px;
+  }
+  .top_button_and_text h1{
+    font-size: 25px;
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 900px){
+  .section_button_container{
+    height: 500px;
+  }
+  .block_with_title{
+    margin-top: 60px;
+  }
+  .block_with_title_top {
+    font-size:medium;
+  }
+  .block_with_title img{
+    margin-bottom: 60px;
+    height: 150px;
+  }
+  .top_button_and_text h1{
+    line-height: 30px;
+    font-size: 20px;
+  }
+  .top_button_and_text button{
+    font-size: 20px;
+    height: 80px;
+    width: 300px;
+  }
+}
+@media screen and (max-width: 700px){
+  .section_button_container{
+    height: 400px;
+  }
+  .block_with_title{
+    margin-top: 50px;
+  }
+  .block_with_title_top {
+    font-size:small;
+  }
+  .block_with_title img{
+    margin-bottom: 50px;
+    height: 120px;
+  }
+  .top_button_and_text h1{
+    font-size: 15px;
+    line-height: 30px;
+    
+  }
+  .top_button_and_text button{
+    font-size: 15px;
+    height: 60px;
+    width: 250px;
+  }
+  .card {
+    width: 12em;
+  }
+  .card img {
+    width: 10em;
+    height: 15em;
+  }
+  
+}
+@media screen and (max-width: 500px){
+  .section_button_container{
+    height: 300px;
+  }
+  .block_with_title{
+    margin-top: 50px;
+  }
+  .section_button_container{
+    height: 200px;
+  }
+  .block_with_title_top {
+    font-size:small;
+    line-height: 40px;
+  }
+  .block_with_title img{
+    margin-bottom: 80px;
+    height: 80px;
+  }
+  .top_button_and_text h1{
+    line-height: 20px;
+    font-size: 10px;
+  }
+  .top_button_and_text button{
+    font-size: 10px;
+    height: 40px;
+    width: 180px;
+  }
+}

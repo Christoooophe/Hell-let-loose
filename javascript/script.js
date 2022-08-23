@@ -62,5 +62,6 @@ buttonsWrapper.addEventListener("click", e => {
   }
 });
 
+// search bar
 
 
