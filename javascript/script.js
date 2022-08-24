@@ -1,5 +1,5 @@
 //Fonction play/pause video header
-let video = document.getElementById("myVideo");
+/*let video = document.getElementById("myVideo");
 let btn = document.getElementById("myBtn");
 
 function playPause() {
@@ -8,7 +8,7 @@ function playPause() {
   } else {
     video.pause();
   }
-}
+}*/
 
 //navbar au scroll
 let prevScrollpos = window.pageYOffset;
@@ -61,7 +61,3 @@ buttonsWrapper.addEventListener("click", e => {
     }
   }
 });
-
-// search bar
-
-

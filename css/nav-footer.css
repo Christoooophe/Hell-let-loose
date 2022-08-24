@@ -1,13 +1,13 @@
 nav{
-    background-color: rgba(0, 0, 0, 0.76);
-    display: flex;
-    flex-direction: row;
-    height: 10%;
-    justify-content: center;
-    position: fixed;
-    width : 100%;
-    transition: top 1s;
-    z-index: 5;
+  background-color: rgba(0, 0, 0, 0.76);
+  display: flex;
+  flex-direction: row;
+  height: 10%;
+  justify-content: center;
+  position: fixed;
+  width : 100%;
+  transition: top 1s;
+  z-index: 5;
      
   }
 
@@ -143,7 +143,7 @@ footer p{
         margin: 0;
         padding: 80px 0;
         list-style: none;
-        background: linear-gradient(194deg, #777777 0%, #5F0404 100%);
+        background: linear-gradient(194deg, #000000 0%, #4c4c4c 100%);
         box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
         transition-duration: .25s;
       }
@@ -164,14 +164,20 @@ footer p{
       }
       #logo_BM img{
         margin-left: -10px;
+        padding-top: 20px;
       }
       #logo_HLL img{
         margin-left: 5px;
         padding-bottom: 20px;
       }
+      
       .nav_a a{
+        font-size: xx-large;
         padding-left: 25px;
-        padding-top: 0px;
+        padding-top: 40px;
+      }
+      .nav_a a:hover{
+        padding-bottom: 0;
       }
       nav{
         background-color: transparent;
@@ -183,6 +189,11 @@ footer p{
         width : 100%;
         transition: top 1s;
         z-index: 5;
-         
+      }
+      .nav_a li:hover{
+        transform: scale(1);
+      }
+      .nav_a img:hover{
+        transform: scale(1);
       }
   }
