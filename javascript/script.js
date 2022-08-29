@@ -41,7 +41,10 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 
 //Carousel
-var slideIndex = 1;
+let slideIndex = 1;
+let nextBtn = document.getElementsByClassName("next");
+let slides = document.getElementsByClassName("mySlides");
+let dots = document.getElementsByClassName("dot");
       showSlides(slideIndex);
       function plusSlides(n) {
          showSlides(slideIndex += n);
@@ -50,9 +53,7 @@ var slideIndex = 1;
          showSlides(slideIndex = n);
       }
       function showSlides(n) {
-         var i;
-         var slides = document.getElementsByClassName("mySlides");
-         var dots = document.getElementsByClassName("dot");
+         let i;
          if (n > slides.length) {slideIndex = 1}
          if (n < 1) {slideIndex = slides.length}
          for (i = 0; i < slides.length; i++) {
@@ -63,4 +64,5 @@ var slideIndex = 1;
          }
          slides[slideIndex-1].style.display = "block";
          dots[slideIndex-1].className += " active";
-      }
+        }
+      
