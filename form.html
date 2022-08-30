@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,21 +9,23 @@
     <link rel="stylesheet" href="./css/form-style.css">
     <link rel="stylesheet" href="./css/nav-footer.css">
 </head>
+
 <body>
     <header>
         <nav id="navbar">
             <input id="menu__toggle" type="checkbox" />
             <label class="menu__btn" for="menu__toggle">
                 <span></span>
-              </label>
+            </label>
             <ul class="nav_a">
                 <!--<li><a href="">Accueil</a></li>-->
-                <a href="index.html"id="logo_HLL"><img src="./assets/img/d4a4debacb0faa71cf19519e0b534cc5.png"></a>
+                <a href="index.html" id="logo_HLL"><img src="./assets/img/d4a4debacb0faa71cf19519e0b534cc5.png"></a>
                 <li><a href="equipements.html" class="menu__item">Belligérants</a></li>
                 <li><a href="maps.html" class="menu__item">Cartes</a></li>
                 <li><a href="form.html" class="menu__item">connexion</a></li>
-                <a href="https://www.blackmatterstudio.com/" id="logo_BM"><img src="./assets/img/1519907000012-removebg-preview.png" ></a>
-            </ul>  
+                <a href="https://www.blackmatterstudio.com/" id="logo_BM"><img
+                        src="./assets/img/1519907000012-removebg-preview.png"></a>
+            </ul>
         </nav>
     </header>
     <div class="form">
@@ -34,19 +37,21 @@
                 </div>
                 <div class="elements">
                     <label>Mot de passe</label>
-                    <input type="password" class="text" id="password" placeholder="**********" maxlength="25"> 
+                    <input type="password" class="text" id="password" placeholder="**********" maxlength="25">
                 </div>
                 <div class="case">
                     <input type="checkbox" onclick="myFunction()">Afficher le mot de passe
                 </div>
                 <span id="span"></span>
-                </div> 
+            </div>
             <div class="button">
-                <button type="button"class="button" id="submit" onclick="verifCompte(); ValidateEmail() ">Submit &#10095;</button>
+                <button type="button" class="button" id="submit" onclick="verifCompte(); ValidateEmail() ">Submit
+                    &#10095;</button>
                 <button type="reset" class="button" id="reset" onclick="macouille()">Reset &#10095;</button>
             </div>
         </form>
     </div>
     <script src="/javascript/form-script.js"></script>
 </body>
+
 </html>

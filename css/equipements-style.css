@@ -1,21 +1,24 @@
-.flag-container{
+.flag-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     padding-top: 100px;
 }
-.flag img{
-   cursor: pointer; 
-   height: 250px;
-   width : 400px;
+
+.flag img {
+    cursor: pointer;
+    height: 250px;
+    width: 400px;
 }
-.Flag img{
+
+.Flag img {
     cursor: pointer;
     height: 300px;
     width: 300px;
 }
-h1{
+
+h1 {
     padding-top: 100px;
     text-align: center;
 }

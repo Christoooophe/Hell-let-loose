@@ -1,13 +1,13 @@
 *{
-    box-sizing: border-box;
-    margin: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
 }
 body{
-    background-image: url("../assets/img/ss_3e69862cbd117e83da91129ec8ecbc244d7c1f43.1920x1080.jpg");
-    background-attachment: fixed;
-    background-size: 100%;
+  background-image: url("../assets/img/ss_3e69862cbd117e83da91129ec8ecbc244d7c1f43.1920x1080.jpg");
+  background-attachment: fixed;
+  background-size: 100%;
   
 }
 
@@ -22,15 +22,8 @@ nav{
   width : 100%;
   transition: top 1s;
   z-index: 5;
-   
-}
-.videoTop{
-  z-index: 1;
-}
-
-.imgTop{
-  z-index: 2;
-}
+     
+  }
 
 #logo_BM img{
   margin: auto;
@@ -40,6 +33,9 @@ nav{
   padding-top: 7px;
   width: 60px; 
 }
+#search{
+  height:30px;
+}
 ul{
   align-items: center;
   display: flex;
@@ -48,71 +44,66 @@ ul{
   list-style-type: none;
 }
 .nav_a a{
-  color: white;
+  color: rgba(255, 255, 255, 0.597);
   text-decoration: none;
-  padding: 25px;
-  font-size: 30px;
-  text-transform: uppercase;
-}
-
-.nav_a a{
-  color: white;
-  text-decoration: none;
-  padding: 0 25px;
+  padding: 0 40px;
   font-size: 30px;
   text-transform: uppercase;
 }
 
 .nav_a a:hover{
-  color: rgb(252, 184, 184);
   text-decoration: underline;
+  color: rgb(255, 255, 255);
+  transition: 0.3s;
 }
 .nav_a li:hover{
   transform: scale(1.2);
+  transition: 0.5s;
 }
 .nav_a img:hover{
   transform: scale(1.2);
+  transition: 0.5s;
 }
 
 
 /* Content*/
 
 .container{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    padding-top: 100px;
-    background-color: rgba(0, 0, 0, 0.605);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  background-color: rgba(0, 0, 0, 0.605);
 }
 .container h1{
-    text-transform: uppercase;
-    margin-top: 30px;
-    margin-bottom: 30px;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .cards{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .card{
-    margin: 30px;
-    text-transform: uppercase;
-    text-align: center;
+  margin: 30px;
+  text-transform: uppercase;
+  text-align: center;
 }
 .card h3{
-    margin-top: 10px;
-    text-decoration: underline;
-    font-size: 20px;
+  margin-top: 10px;
+  text-decoration: underline;
+  font-size: 20px;
 }
 .card img{
   border: solid 1px rgb(75, 75, 75);
-    border-radius: 5%;
-    cursor: pointer;
-    filter: drop-shadow(0 0 0.75rem rgb(74, 74, 74));
-    filter: brightness(1.25);
-    height : 250px;
-    width: 400px;
+  border-radius: 5%;
+  cursor: pointer;
+  filter: drop-shadow(0 0 0.75rem rgb(74, 74, 74));
+  filter: brightness(1.25);
+  height : 250px;
+  width: 400px;
 }
 .card img:hover{
   box-shadow: 0 0 0 2px white;
@@ -140,13 +131,14 @@ footer p{
   margin: 20px;
 }
 .logos_reseaux img{
+  cursor: pointer;
   margin: 10px 15px;
 }
 #menu__toggle, #menu__btn{
   visibility: hidden;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 700px) {
   #menu__toggle, #menu__btn{
       visibility: visible;
   }

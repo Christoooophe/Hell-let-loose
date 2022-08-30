@@ -40,6 +40,9 @@ function reveal() {
 }
 window.addEventListener("scroll", reveal);
 
+//Consoles et pc
+
+
 //Carousel
 let slideIndex = 1;
 let nextBtn = document.getElementsByClassName("next");
